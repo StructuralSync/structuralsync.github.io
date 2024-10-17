@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StructureSync - Submit Your Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            flex: 1;
+        }
+        header, footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        h1, h2 {
+            color: #333;
+            font-weight: 700;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: 700;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: auto;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StructureSource</h1>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="projectform.html">Submit Project</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Submit Your Project</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="project-type">Project Type:</label>
+            <select id="project-type" name="project-type" required>
+                <option value="">Select a project type</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="infrastructure">Infrastructure</option>
+            </select>
+
+            <label for="project-size">Project Size (sq ft):</label>
+            <input type="text" id="project-size" name="project-size">
+
+            <label for="location">Project Location:</label>
+            <input type="text" id="location" name="location">
+
+            <label for="start-date">Estimated Start Date:</label>
+            <input type="text" id="start-date" name="start-date" placeholder="MM/DD/YYYY">
+
+            <label for="materials">Required Materials:</label>
+            <textarea id="materials" name="materials" rows="4" placeholder="List the main materials you need for this project"></textarea>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any other details about your project"></textarea>
+
+            <input type="submit" value="Submit Project Details">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="project-form.html">Submit Project</a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 StructureSource. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
