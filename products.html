@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StructuralSync - Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Include your existing styles here */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .learn-more {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .learn-more:hover {
+            background-color: #45a049;
+        }
+        .product-category {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StructureSource</h1>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="products.html">Products</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="projectform.html">Submit Project</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Our Product Categories</h1>
+        
+        <section class="product-category">
+            <h2>Fiber Cement Board</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Betopan MGO Boards</h3>
+                    <p>High-performance magnesium oxide boards perfect for exterior and interior applications. Weather-resistant and fire-rated.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>TechWool Alternatives</h3>
+                    <p>Innovative fiber cement alternatives with superior insulation properties and sustainable materials.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Metal Panels</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Starbond Metal Roofing</h3>
+                    <p>Premium metal roofing solutions with advanced coating technology for superior durability and weather resistance.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Steel Frame Solutions</h3>
+                    <p>Complete steel framing systems for residential and commercial construction, including cold-formed steel options.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Ceramic Tiles</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Seramiksan Collections</h3>
+                    <p>Premium Turkish ceramic tiles for floors and walls. Wide range of designs and sizes available.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Custom Tile Solutions</h3>
+                    <p>Customizable tile options for commercial and residential projects. Bulk ordering available.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Insulation Materials</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>TechWool Insulation</h3>
+                    <p>High-performance thermal and acoustic insulation solutions with fire-resistant properties.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Doors and Hardware</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Commercial Door Systems</h3>
+                    <p>Complete door solutions for commercial and industrial applications.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Door Hardware Collections</h3>
+                    <p>Premium door hardware and accessories for all door types.</p>
+                    <a href="#" class="learn-more">Request Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="request-info">
+            <h2>Need More Information?</h2>
+            <p>Our team is ready to help you find the perfect materials for your project.</p>
+            <a href="projectform.html" class="cta-button">Submit Project Requirements</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html#about">About</a>
+                <a href="products.html">Products</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 StructureSource. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
