@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StructureSync - Submit Your Project</title>
+    <title>Structural Sync - Submit Your Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -105,7 +105,7 @@
 </head>
 <body>
     <header>
-        <h1>StructureSource</h1>
+        <h1>Structural Sync</h1>
         <nav>
             <a href="index.html#about">About</a>
             <a href="index.html#services">Services</a>
@@ -116,7 +116,7 @@
     
     <div class="container">
         <h2>Submit Your Project</h2>
-        <form action="#" method="post">
+        <form action="https://formspree.io/f/xzzbbygn" method="post" enctype="multipart/form-data">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -150,6 +150,9 @@
             <label for="additional-info">Additional Information:</label>
             <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any other details about your project"></textarea>
 
+            <label>Your file:</label>
+                <input type="file" name="upload">
+              </label>
             <input type="submit" value="Submit Project Details">
         </form>
     </div>
@@ -163,7 +166,7 @@
                 <a href="project-form.html">Submit Project</a>
             </div>
             <div class="copyright">
-                &copy; 2024 StructureSource. All rights reserved.
+                &copy; 2024 Structural Sync. All rights reserved.
             </div>
         </div>
     </footer>
